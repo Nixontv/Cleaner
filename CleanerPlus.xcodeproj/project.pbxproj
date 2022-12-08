@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79520BE228A68C410085F059 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BE128A68C410085F059 /* HeaderView.swift */; };
+		79520BE428A68C510085F059 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BE328A68C510085F059 /* PhotoCollectionViewCell.swift */; };
+		79520BE628A68C620085F059 /* PhotoCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BE528A68C620085F059 /* PhotoCollectionReusableView.swift */; };
+		79520BE828A68C720085F059 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BE728A68C720085F059 /* ContactTableViewCell.swift */; };
+		79520BEA28A68C810085F059 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BE928A68C810085F059 /* CalendarTableViewCell.swift */; };
+		79520BEC28A68C900085F059 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BEB28A68C900085F059 /* SettingsTableViewCell.swift */; };
+		79520BEE28A68CA10085F059 /* TipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BED28A68CA10085F059 /* TipsTableViewCell.swift */; };
+		79520BF528A68CC10085F059 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520BEF28A68CC10085F059 /* CalendarTableViewCell.xib */; };
+		79520BF628A68CC10085F059 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520BF028A68CC10085F059 /* PhotoCollectionViewCell.xib */; };
+		79520BF728A68CC10085F059 /* TipsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520BF128A68CC10085F059 /* TipsTableViewCell.xib */; };
+		79520BF828A68CC10085F059 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520BF228A68CC10085F059 /* SettingsTableViewCell.xib */; };
+		79520BF928A68CC10085F059 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520BF328A68CC10085F059 /* ContactTableViewCell.xib */; };
+		79520BFA28A68CC10085F059 /* PhotoCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520BF428A68CC10085F059 /* PhotoCollectionReusableView.xib */; };
+		79520BFC28A68CD50085F059 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BFB28A68CD50085F059 /* PhotosViewController.swift */; };
+		79520BFE28A68CE70085F059 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BFD28A68CE70085F059 /* ContactsViewController.swift */; };
+		79520C0028A68CF70085F059 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520BFF28A68CF70085F059 /* CalendarViewController.swift */; };
+		79520C0228A68D060085F059 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520C0128A68D060085F059 /* SettingsViewController.swift */; };
+		79520C0428A68D160085F059 /* BatteryTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520C0328A68D160085F059 /* BatteryTipsViewController.swift */; };
+		79520C0A28A68D330085F059 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520C0528A68D330085F059 /* PhotosViewController.xib */; };
+		79520C0B28A68D330085F059 /* BatteryTipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520C0628A68D330085F059 /* BatteryTipsViewController.xib */; };
+		79520C0C28A68D330085F059 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520C0728A68D330085F059 /* CalendarViewController.xib */; };
+		79520C0D28A68D330085F059 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520C0828A68D330085F059 /* SettingsViewController.xib */; };
+		79520C0E28A68D330085F059 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79520C0928A68D330085F059 /* ContactsViewController.xib */; };
+		79520C1028A68D460085F059 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520C0F28A68D460085F059 /* CalendarManager.swift */; };
+		79520C1228A68D540085F059 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520C1128A68D540085F059 /* ContactsManager.swift */; };
+		79520C1428A68D630085F059 /* PhotosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79520C1328A68D630085F059 /* PhotosManager.swift */; };
+		79520C1728A68D740085F059 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79520C1528A68D740085F059 /* Database.xcdatamodeld */; };
+		79520C1A28A68DC00085F059 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 79520C1928A68DC00085F059 /* GoogleMobileAds */; };
+		798ADC6628A523E100C7178A /* CleanerPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ADC6528A523E100C7178A /* CleanerPlusApp.swift */; };
+		798ADC6A28A523E200C7178A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798ADC6928A523E200C7178A /* Assets.xcassets */; };
+		798ADC6D28A523E200C7178A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798ADC6C28A523E200C7178A /* Preview Assets.xcassets */; };
+		798ADC7628A5240200C7178A /* DashboardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ADC7528A5240200C7178A /* DashboardContentView.swift */; };
+		798ADC7828A5242600C7178A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ADC7728A5242600C7178A /* AppDelegate.swift */; };
+		798ADC7B28A5244400C7178A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ADC7A28A5244400C7178A /* AppConfig.swift */; };
+		798ADC7E28A5246B00C7178A /* DashboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ADC7D28A5246B00C7178A /* DashboardManager.swift */; };
+		798ADC8028A524A200C7178A /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798ADC7F28A524A200C7178A /* Launch.storyboard */; };
+		7995A58D28AD81FC000CA279 /* PurchaseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798ADC8128A524C600C7178A /* PurchaseKit.xcframework */; };
+		7995A58E28AD81FC000CA279 /* PurchaseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 798ADC8128A524C600C7178A /* PurchaseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7995A58F28AD81FC000CA279 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7995A58E28AD81FC000CA279 /* PurchaseKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		79520BE128A68C410085F059 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		79520BE328A68C510085F059 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		79520BE528A68C620085F059 /* PhotoCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionReusableView.swift; sourceTree = "<group>"; };
+		79520BE728A68C720085F059 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		79520BE928A68C810085F059 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		79520BEB28A68C900085F059 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		79520BED28A68CA10085F059 /* TipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewCell.swift; sourceTree = "<group>"; };
+		79520BEF28A68CC10085F059 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		79520BF028A68CC10085F059 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		79520BF128A68CC10085F059 /* TipsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsTableViewCell.xib; sourceTree = "<group>"; };
+		79520BF228A68CC10085F059 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		79520BF328A68CC10085F059 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		79520BF428A68CC10085F059 /* PhotoCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionReusableView.xib; sourceTree = "<group>"; };
+		79520BFB28A68CD50085F059 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		79520BFD28A68CE70085F059 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		79520BFF28A68CF70085F059 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		79520C0128A68D060085F059 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		79520C0328A68D160085F059 /* BatteryTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTipsViewController.swift; sourceTree = "<group>"; };
+		79520C0528A68D330085F059 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		79520C0628A68D330085F059 /* BatteryTipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BatteryTipsViewController.xib; sourceTree = "<group>"; };
+		79520C0728A68D330085F059 /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		79520C0828A68D330085F059 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		79520C0928A68D330085F059 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		79520C0F28A68D460085F059 /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		79520C1128A68D540085F059 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		79520C1328A68D630085F059 /* PhotosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosManager.swift; sourceTree = "<group>"; };
+		79520C1628A68D740085F059 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		798ADC6228A523E100C7178A /* CleanerPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanerPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		798ADC6528A523E100C7178A /* CleanerPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerPlusApp.swift; sourceTree = "<group>"; };
+		798ADC6928A523E200C7178A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		798ADC6C28A523E200C7178A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		798ADC7528A5240200C7178A /* DashboardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContentView.swift; sourceTree = "<group>"; };
+		798ADC7728A5242600C7178A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		798ADC7A28A5244400C7178A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		798ADC7D28A5246B00C7178A /* DashboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardManager.swift; sourceTree = "<group>"; };
+		798ADC7F28A524A200C7178A /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		798ADC8128A524C600C7178A /* PurchaseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PurchaseKit.xcframework; sourceTree = "<group>"; };
+		798ADC8328A524E800C7178A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		798ADC5F28A523E100C7178A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79520C1A28A68DC00085F059 /* GoogleMobileAds in Frameworks */,
+				7995A58D28AD81FC000CA279 /* PurchaseKit.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79520BE028A68C390085F059 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79520BE128A68C410085F059 /* HeaderView.swift */,
+				79520BE328A68C510085F059 /* PhotoCollectionViewCell.swift */,
+				79520BE528A68C620085F059 /* PhotoCollectionReusableView.swift */,
+				79520BE728A68C720085F059 /* ContactTableViewCell.swift */,
+				79520BE928A68C810085F059 /* CalendarTableViewCell.swift */,
+				79520BEB28A68C900085F059 /* SettingsTableViewCell.swift */,
+				79520BED28A68CA10085F059 /* TipsTableViewCell.swift */,
+				79520BEF28A68CC10085F059 /* CalendarTableViewCell.xib */,
+				79520BF328A68CC10085F059 /* ContactTableViewCell.xib */,
+				79520BF428A68CC10085F059 /* PhotoCollectionReusableView.xib */,
+				79520BF028A68CC10085F059 /* PhotoCollectionViewCell.xib */,
+				79520BF228A68CC10085F059 /* SettingsTableViewCell.xib */,
+				79520BF128A68CC10085F059 /* TipsTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		798ADC5928A523E100C7178A = {
+			isa = PBXGroup;
+			children = (
+				798ADC6428A523E100C7178A /* CleanerPlus */,
+				798ADC6328A523E100C7178A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		798ADC6328A523E100C7178A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				798ADC6228A523E100C7178A /* CleanerPlus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		798ADC6428A523E100C7178A /* CleanerPlus */ = {
+			isa = PBXGroup;
+			children = (
+				79520BE028A68C390085F059 /* Views */,
+				798ADC7428A523F100C7178A /* Flows */,
+				798ADC7328A523E900C7178A /* Lifecycle */,
+				798ADC7C28A5246300C7178A /* DataManager */,
+				798ADC7928A5243900C7178A /* Configuration */,
+				798ADC8128A524C600C7178A /* PurchaseKit.xcframework */,
+				798ADC7F28A524A200C7178A /* Launch.storyboard */,
+				798ADC6928A523E200C7178A /* Assets.xcassets */,
+				798ADC8328A524E800C7178A /* Info.plist */,
+				798ADC6B28A523E200C7178A /* Preview Content */,
+			);
+			path = CleanerPlus;
+			sourceTree = "<group>";
+		};
+		798ADC6B28A523E200C7178A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				798ADC6C28A523E200C7178A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		798ADC7328A523E900C7178A /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				798ADC7728A5242600C7178A /* AppDelegate.swift */,
+				798ADC6528A523E100C7178A /* CleanerPlusApp.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		798ADC7428A523F100C7178A /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				798ADC7528A5240200C7178A /* DashboardContentView.swift */,
+				79520BFB28A68CD50085F059 /* PhotosViewController.swift */,
+				79520BFD28A68CE70085F059 /* ContactsViewController.swift */,
+				79520BFF28A68CF70085F059 /* CalendarViewController.swift */,
+				79520C0128A68D060085F059 /* SettingsViewController.swift */,
+				79520C0328A68D160085F059 /* BatteryTipsViewController.swift */,
+				79520C0628A68D330085F059 /* BatteryTipsViewController.xib */,
+				79520C0728A68D330085F059 /* CalendarViewController.xib */,
+				79520C0928A68D330085F059 /* ContactsViewController.xib */,
+				79520C0528A68D330085F059 /* PhotosViewController.xib */,
+				79520C0828A68D330085F059 /* SettingsViewController.xib */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		798ADC7928A5243900C7178A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				798ADC7A28A5244400C7178A /* AppConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		798ADC7C28A5246300C7178A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				798ADC7D28A5246B00C7178A /* DashboardManager.swift */,
+				79520C0F28A68D460085F059 /* CalendarManager.swift */,
+				79520C1128A68D540085F059 /* ContactsManager.swift */,
+				79520C1328A68D630085F059 /* PhotosManager.swift */,
+				79520C1528A68D740085F059 /* Database.xcdatamodeld */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		798ADC6128A523E100C7178A /* CleanerPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798ADC7028A523E200C7178A /* Build configuration list for PBXNativeTarget "CleanerPlus" */;
+			buildPhases = (
+				798ADC5E28A523E100C7178A /* Sources */,
+				798ADC5F28A523E100C7178A /* Frameworks */,
+				798ADC6028A523E100C7178A /* Resources */,
+				7995A58F28AD81FC000CA279 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanerPlus;
+			packageProductDependencies = (
+				79520C1928A68DC00085F059 /* GoogleMobileAds */,
+			);
+			productName = CleanerPlus;
+			productReference = 798ADC6228A523E100C7178A /* CleanerPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		798ADC5A28A523E100C7178A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					798ADC6128A523E100C7178A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 798ADC5D28A523E100C7178A /* Build configuration list for PBXProject "CleanerPlus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 798ADC5928A523E100C7178A;
+			packageReferences = (
+				79520C1828A68DC00085F059 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 798ADC6328A523E100C7178A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				798ADC6128A523E100C7178A /* CleanerPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		798ADC6028A523E100C7178A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79520C0D28A68D330085F059 /* SettingsViewController.xib in Resources */,
+				79520BF928A68CC10085F059 /* ContactTableViewCell.xib in Resources */,
+				79520BFA28A68CC10085F059 /* PhotoCollectionReusableView.xib in Resources */,
+				79520BF828A68CC10085F059 /* SettingsTableViewCell.xib in Resources */,
+				79520C0A28A68D330085F059 /* PhotosViewController.xib in Resources */,
+				798ADC6D28A523E200C7178A /* Preview Assets.xcassets in Resources */,
+				79520BF628A68CC10085F059 /* PhotoCollectionViewCell.xib in Resources */,
+				79520C0E28A68D330085F059 /* ContactsViewController.xib in Resources */,
+				798ADC6A28A523E200C7178A /* Assets.xcassets in Resources */,
+				798ADC8028A524A200C7178A /* Launch.storyboard in Resources */,
+				79520C0C28A68D330085F059 /* CalendarViewController.xib in Resources */,
+				79520C0B28A68D330085F059 /* BatteryTipsViewController.xib in Resources */,
+				79520BF528A68CC10085F059 /* CalendarTableViewCell.xib in Resources */,
+				79520BF728A68CC10085F059 /* TipsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		798ADC5E28A523E100C7178A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79520C0028A68CF70085F059 /* CalendarViewController.swift in Sources */,
+				79520BE628A68C620085F059 /* PhotoCollectionReusableView.swift in Sources */,
+				79520BFE28A68CE70085F059 /* ContactsViewController.swift in Sources */,
+				79520C1028A68D460085F059 /* CalendarManager.swift in Sources */,
+				79520BFC28A68CD50085F059 /* PhotosViewController.swift in Sources */,
+				798ADC7828A5242600C7178A /* AppDelegate.swift in Sources */,
+				79520C1428A68D630085F059 /* PhotosManager.swift in Sources */,
+				79520C1728A68D740085F059 /* Database.xcdatamodeld in Sources */,
+				79520BE228A68C410085F059 /* HeaderView.swift in Sources */,
+				79520BEA28A68C810085F059 /* CalendarTableViewCell.swift in Sources */,
+				79520C0228A68D060085F059 /* SettingsViewController.swift in Sources */,
+				798ADC7B28A5244400C7178A /* AppConfig.swift in Sources */,
+				79520BEE28A68CA10085F059 /* TipsTableViewCell.swift in Sources */,
+				798ADC6628A523E100C7178A /* CleanerPlusApp.swift in Sources */,
+				79520C1228A68D540085F059 /* ContactsManager.swift in Sources */,
+				79520BEC28A68C900085F059 /* SettingsTableViewCell.swift in Sources */,
+				79520C0428A68D160085F059 /* BatteryTipsViewController.swift in Sources */,
+				79520BE428A68C510085F059 /* PhotoCollectionViewCell.swift in Sources */,
+				79520BE828A68C720085F059 /* ContactTableViewCell.swift in Sources */,
+				798ADC7628A5240200C7178A /* DashboardContentView.swift in Sources */,
+				798ADC7E28A5246B00C7178A /* DashboardManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		798ADC6E28A523E200C7178A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		798ADC6F28A523E200C7178A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		798ADC7128A523E200C7178A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanerPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = BC9T3XUY66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanerPlus/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Find old calendar events";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Find similar/duplicate contacts";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Find similar/duplicate images";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "App would like to access IDFA for tracking purpose";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixontv.cleaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		798ADC7228A523E200C7178A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanerPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = BC9T3XUY66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanerPlus/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Find old calendar events";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Find similar/duplicate contacts";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Find similar/duplicate images";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "App would like to access IDFA for tracking purpose";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixontv.cleaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		798ADC5D28A523E100C7178A /* Build configuration list for PBXProject "CleanerPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798ADC6E28A523E200C7178A /* Debug */,
+				798ADC6F28A523E200C7178A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798ADC7028A523E200C7178A /* Build configuration list for PBXNativeTarget "CleanerPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798ADC7128A523E200C7178A /* Debug */,
+				798ADC7228A523E200C7178A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79520C1828A68DC00085F059 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79520C1928A68DC00085F059 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79520C1828A68DC00085F059 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		79520C1528A68D740085F059 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79520C1628A68D740085F059 /* Database.xcdatamodel */,
+			);
+			currentVersion = 79520C1628A68D740085F059 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 798ADC5A28A523E100C7178A /* Project object */;
+}

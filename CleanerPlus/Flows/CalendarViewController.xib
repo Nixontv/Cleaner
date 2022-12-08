@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="CleanerPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingStackView" destination="Ofs-Qk-64b" id="ik3-2f-fCI"/>
+                <outlet property="progressLabel" destination="Kgi-TQ-a2t" id="oKf-Mj-YSN"/>
+                <outlet property="tableView" destination="OaU-TL-9nD" id="U2C-zC-0h6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OaU-TL-9nD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0Rs-oZ-WOP"/>
+                        <outlet property="delegate" destination="-1" id="NW9-AX-UXJ"/>
+                    </connections>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ofs-Qk-64b">
+                    <rect key="frame" x="165" y="428.5" width="84.5" height="39"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="K8m-ix-6bR">
+                            <rect key="frame" x="32" y="0.0" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please wait..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgi-TQ-a2t">
+                            <rect key="frame" x="0.0" y="22" width="84.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="DarkGrayColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ofs-Qk-64b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ps3-3T-cR6"/>
+                <constraint firstItem="OaU-TL-9nD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="V1T-UB-TTR"/>
+                <constraint firstAttribute="bottom" secondItem="OaU-TL-9nD" secondAttribute="bottom" id="b3x-is-B0v"/>
+                <constraint firstItem="OaU-TL-9nD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bPt-S9-FHq"/>
+                <constraint firstItem="OaU-TL-9nD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="frG-Su-c1d"/>
+                <constraint firstItem="Ofs-Qk-64b" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mzU-fA-FAp"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="DarkGrayColor">
+            <color red="0.20000000298023224" green="0.20399999618530273" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

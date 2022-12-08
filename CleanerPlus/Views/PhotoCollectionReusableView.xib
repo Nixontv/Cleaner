@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="PhotoCollectionReusableView" customModule="CleanerPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF2-k2-Hzf">
+                    <rect key="frame" x="16" y="17" width="52" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" name="DarkGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="right" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkp-kz-6cC">
+                    <rect key="frame" x="236" y="10" width="68" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Select All">
+                        <color key="titleColor" name="AccentColor"/>
+                    </state>
+                    <state key="selected" title="Deselect All"/>
+                    <state key="highlighted">
+                        <color key="titleColor" name="AccentLightColor"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="xI8-pM-XVw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bkp-kz-6cC" secondAttribute="trailing" constant="16" id="Nui-ry-rDh"/>
+                <constraint firstItem="bkp-kz-6cC" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Nzf-p3-jLU"/>
+                <constraint firstItem="YF2-k2-Hzf" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="16" id="Plw-jm-b4f"/>
+                <constraint firstItem="YF2-k2-Hzf" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="fsh-bJ-HW2"/>
+            </constraints>
+            <connections>
+                <outlet property="photosCountLabel" destination="YF2-k2-Hzf" id="so8-pr-mid"/>
+                <outlet property="selectButton" destination="bkp-kz-6cC" id="rDa-Rx-kE6"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="82"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.34099999070167542" green="0.34900000691413879" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="AccentLightColor">
+            <color red="0.47499999403953552" green="0.42399999499320984" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="DarkGrayColor">
+            <color red="0.20000000298023224" green="0.20399999618530273" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
